@@ -1,0 +1,34 @@
+<div *ngIf="hero">
+  <h2>Detalles de {{hero.name | uppercase}}: </h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label for="hero-name"> Nombre del antiheroe: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
+  </div>
+  <div>
+    <label for="hero-edad"> Edad del antiheroe: </label>
+    <input id="hero-edad" [(ngModel)]="hero.edad" placeholder="edad">
+  </div>
+  <div>
+    <label for="hero-tippoder"> Tipo de poder: </label>
+    <input id="hero-tippoder" [(ngModel)]="hero.tippoder" placeholder="tippoder">
+  </div>
+  <div>
+    <label for="hero-identidad"> Identidad: </label>
+    <input id="hero-identidad" [(ngModel)]="hero.identidad" placeholder="identidad">
+  </div>
+  <div>
+    <label for="hero-universo"> Universo: </label>
+    <input id="hero-universo" [(ngModel)]="hero.universo" placeholder="universo">
+  </div>
+
+  <button (click)="goBack()">Regresar</button>
+  <button (click)="save()">Guardar</button>
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
